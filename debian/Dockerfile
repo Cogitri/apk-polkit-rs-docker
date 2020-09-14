@@ -4,7 +4,7 @@ RUN apt-get update \
 		dbus-x11 python3-dbusmock gettext lua5.3 lua-zlib appstream-util \
 		appstream rustc cargo python3-pip libssl-dev pkg-config llvm \
 		libglib2.0-dev-bin libglib2.0-dev policykit-1 lcov libc6-dbg \
-		libclang-dev valgrind \
+		libclang-dev clang valgrind \
 	&& pip3 install meson ninja \
 	&& rustup update nightly && rustup default nightly && cargo install grcov \
     && git clone https://gitlab.alpinelinux.org/alpine/abuild \
